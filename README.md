@@ -1,13 +1,13 @@
-Nodejs Express + Sequelize
+  Nodejs Express + Sequelize
 
-First run docker-compose build
+- First run docker-compose build
 
-$ docker-compose build
+  $ docker-compose build
 
-Now run docker-compose up postgres separeted from API
+- Now run docker-compose up postgres separeted from API
 
-$ docker-compose up postgres
+  $ docker-compose up postgres
 
-Now run docker-compose up node
+- Now run docker-compose up node
 
-$ docker-compose up app
+  $ docker-compose up app
