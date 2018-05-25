@@ -1,0 +1,21 @@
+version: "2.2"
+services:
+  app:
+    build:
+      context: .
+    container_name: "node-express"
+    ports:
+      - 3000:3000
+    links:
+      - postgres
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: "test"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: ""
+    ports:
+      - 5432:5432

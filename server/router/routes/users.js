@@ -2,6 +2,11 @@
 
 module.exports = (app, db) => {
 
+  // GET health
+  app.get('/health', (req, res) => {
+    res.status(200).send('OK');
+  });
+
   // GET all users
   app.get('/users', (req, res) => {
     db.users.findAll()
