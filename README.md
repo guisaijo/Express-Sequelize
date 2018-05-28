@@ -1,4 +1,4 @@
-  Nodejs Express + Sequelize
+Nodejs Express + Sequelize
 
 - First run docker-compose build
 
