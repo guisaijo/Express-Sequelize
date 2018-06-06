@@ -1,6 +1,4 @@
-'use strict';
-
-const { checkSchema, validationResult } = require('express-validator/check');
+import { checkSchema, validationResult } from 'express-validator/check';
 
 module.exports = (app, db) => {
 
