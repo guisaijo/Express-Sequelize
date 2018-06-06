@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon --exec babel-node ./index"
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "dotenv-safe": "^5.0.1",
     "express": "^4.14.0",
     "express-validator": "^5.2.0",
+    "nodemon": "^1.17.5",
     "pg": "^6.1.0",
     "pg-hstore": "2.3.2",
     "sequelize": "^3.24.3",
     "sequelize-cli": "2.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
   }
 }
